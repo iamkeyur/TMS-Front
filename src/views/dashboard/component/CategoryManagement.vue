@@ -98,7 +98,13 @@ export default {
     active: [],
     avatar: null,
     open: [],
-    users: [],
+    en: [],
+    fr: [],
+    sp: [],
+    zh: [],
+    it: [],
+    pt: [],
+
     categories: []
   }),
 
@@ -109,23 +115,21 @@ export default {
           id: "1",
           _id: "root",
           name: "English Categories",
-          children: this.users,
+          children: this.en,
           lang: "en"
         },
         {
           id: "2",
           _id: "root",
-
           name: "French Categories",
-          children: this.users,
+          children: this.fr,
           lang: "fr"
         },
         {
           id: "3",
           _id: "root",
-
           name: "Spanish Categories",
-          children: this.users,
+          children: this.sp,
           lang: "sp"
         },
         {
@@ -133,7 +137,7 @@ export default {
           _id: "root",
 
           name: "Chienese Categories",
-          children: this.users,
+          children: this.zh,
           lang: "zh"
         },
         {
@@ -141,7 +145,7 @@ export default {
           _id: "root",
 
           name: "Italian Categories",
-          children: this.users,
+          children: this.it,
           lang: "it"
         },
         {
@@ -149,7 +153,7 @@ export default {
           _id: "root",
 
           name: "Portuguese Categories",
-          children: this.users,
+          children: this.pt,
           lang: "pt"
         }
       ];
