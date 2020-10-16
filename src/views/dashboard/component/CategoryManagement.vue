@@ -26,7 +26,7 @@
           <div
             v-if="!selected"
             class="display-3 grey--text text--lighten-1 "
-            style="align-self: center;"
+            style="align-self: center; width: 50%; margin: 0 auto;"
           >
             Select a Category
           </div>
