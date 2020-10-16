@@ -32,31 +32,27 @@
           </div>
           <v-form v-else ref="form">
             <v-text-field
-              v-model="id"
+              v-model="selected.id"
               label="Id"
+              disabled
               :placeholder="selected._id"
               required
             ></v-text-field>
             <v-text-field
-              v-model="name"
-              :counter="10"
-              label="Name"
+              v-model="selected.name"
+              label="Category name"
               required
-              :placeholder="selected.name"
             ></v-text-field>
             <v-text-field
-              v-model="parentDisplaylabel"
+              v-model="selected.parentDisplayLabel"
               label="Parent Category"
               required
-              :placeholder="selected.parentDisplayLabel"
             ></v-text-field>
 
             <v-text-field
-              v-model="seoUrl"
-              :counter="10"
+              v-model="selected.seoUrl"
               label="SEO URL"
               required
-              :placeholder="selected.seoUrl"
             ></v-text-field>
 
             <!-- <v-btn
@@ -135,7 +131,6 @@ export default {
         {
           id: "4",
           _id: "root",
-
           name: "Chienese Categories",
           children: this.zh,
           lang: "zh"
@@ -143,7 +138,6 @@ export default {
         {
           id: "5",
           _id: "root",
-
           name: "Italian Categories",
           children: this.it,
           lang: "it"
@@ -151,7 +145,6 @@ export default {
         {
           id: "6",
           _id: "root",
-
           name: "Portuguese Categories",
           children: this.pt,
           lang: "pt"
